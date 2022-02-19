@@ -11,7 +11,7 @@ export default class App extends Component {
     const {navigation} = this.props;
        
     function navigateBack() {
-        navigation.navigate('Login Profissional');
+        navigation.navigate('Perfil Paciente');
     }
     
     function navigateToPaciente() {
@@ -33,8 +33,7 @@ export default class App extends Component {
             </View>
 
             <Text style={styles.title}>Instruções de Uso</Text>
-            <Text style={styles.title}>-----------------</Text>
-            <Text style={styles.title}></Text>
+            <Text style={styles.title}>---------------------</Text>
             <Text style={styles.activityTitle}> Lorem Ipsum is simply dummy text of the 
             printing and typesetting industry. Lorem Ipsum has been the industry's 
             standard dummy text ever since the 1500s, when an unknown printer took 

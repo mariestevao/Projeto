@@ -50,7 +50,7 @@ export default StyleSheet.create({
         width: '48%',
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: 10,
+        marginTop: 0,
 
     },
 
@@ -58,13 +58,6 @@ export default StyleSheet.create({
         color: '#FFF',
         fontSize: 15,
         fontWeight: 'bold',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-    },
-    
-    duvida: {
-        color: '#FFF',
-        fontSize: 35,
         justifyContent: 'space-between',
         alignItems: 'center',
     },

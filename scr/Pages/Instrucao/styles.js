@@ -54,7 +54,12 @@ export default StyleSheet.create({
         textAlign: 'justify',
     },
     
- 
+    duvida: {
+        color: '#13131a',
+        fontSize: 15,
+        justifyContent: 'space-between',
+        alignItems: 'center',
+    },
 
     actions: {
         marginTop: 16,
@@ -65,14 +70,13 @@ export default StyleSheet.create({
     },
 
     action: {
-        marginTop: 10,
+        //marginTop: 10,
         backgroundColor:'#00CCC1',
         borderRadius: 30,
         height: 50,
         width: '65%',
         justifyContent: 'center',
         alignItems: 'center',
-
     },
 
     actionText: {
@@ -89,7 +93,7 @@ export default StyleSheet.create({
         //marginLeft:110,
         width: '100%',
         justifyContent: 'flex-start',
-        marginLeft: '5%',
+        //marginLeft: '2%',
         marginBottom: '10%',
 
     },
