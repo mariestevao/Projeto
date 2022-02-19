@@ -6,22 +6,11 @@ import styles from './styles';
 import { Feather } from '@expo/vector-icons';
 
 export default function Perfil() {
-    
-    const navigation = useNavigation();
-    
-
-    function navigateToPerfil() {
-        navigation.navigate('Perfil Paciente');
-    }
-
         return (
         <ScrollView>
         <View style={styles.container}>
             
-            <TouchableOpacity style={styles.volta} onPress={navigateToPerfil}>
-                    <Feather name="arrow-left" size={28} color="#00CCC1" />
-                    <Text style={styles.volta2}>Voltar</Text>
-            </TouchableOpacity>
+           
             
             <View style={styles.header}>
                 <Image source={logoImg} style={styles.logo}/>
