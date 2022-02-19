@@ -44,14 +44,19 @@ export default class App extends Component {
             sheets containing Lorem Ipsum passages, and more recently with desktop publishing software 
             like Aldus PageMaker including versions of Lorem Ipsum.</Text>
            
-            
+            <Text style={styles.duvida}> Dúvidas?</Text>
             <View style={styles.actions}>
                 <TouchableOpacity style={styles.action} onPress={navigateToPaciente}>
-                    <Text style={styles.actionText}>Paciente</Text>
+                    <Text style={styles.actionText}>Contate profissional</Text>
                 </TouchableOpacity>
+                
 
             </View>           
-        
+
+            <Text style={styles.title}></Text>
+            <Text style={styles.title}></Text>
+
+
         </View>    
         </ScrollView>
       );

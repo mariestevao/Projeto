@@ -44,13 +44,13 @@ export default StyleSheet.create({
     },
 
     action: {
-        marginTop: 10,
-        backgroundColor:'#00CCC1',
+        backgroundColor: '#00CCC1',
         borderRadius: 30,
-        height: '100%',
-        width: 200,
+        height: 50,
+        width: '48%',
         justifyContent: 'center',
         alignItems: 'center',
+        marginTop: 10,
 
     },
 
@@ -62,6 +62,13 @@ export default StyleSheet.create({
         alignItems: 'center',
     },
     
+    duvida: {
+        color: '#FFF',
+        fontSize: 35,
+        justifyContent: 'space-between',
+        alignItems: 'center',
+    },
+
     nomesTitle: {
         fontSize: 12,
         lineHeight: 20,

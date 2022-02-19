@@ -49,6 +49,9 @@ export default StyleSheet.create({
         fontSize: 20,
         color: '#13131a',
         lineHeight: 30,
+        justifyContent: 'center',
+        alignItems: 'center',
+        textAlign: 'justify',
     },
     
  
