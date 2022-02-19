@@ -21,15 +21,26 @@ export default function Perfil() {
         <ScrollView>
         <View style={styles.container}>
             
+            <TouchableOpacity style={styles.volta} onPress={navigateBack}>
+                    <Feather name="arrow-left" size={28} color="#00CCC1" />
+                    <Text style={styles.volta2}>Voltar</Text>
+            </TouchableOpacity>
+            
             <View style={styles.header}>
                 <Image source={logoImg} style={styles.logo}/>
             </View>
 
-            <Text style={styles.title}>-----------------</Text>
-            <Text style={styles.title}>Bem-Vindo(a)!</Text>
+            <Text style={styles.title}>Instruções de Uso</Text>
             <Text style={styles.title}>-----------------</Text>
             <Text style={styles.title}></Text>
-            <Text style={styles.activityTitle}> Selecione seu tipo de perfil</Text>
+            <Text style={styles.activityTitle}> Lorem Ipsum is simply dummy text of the 
+            printing and typesetting industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s, when an unknown printer took 
+            a galley of type and scrambled it to make a type specimen book. It has survived 
+            not only five centuries, but also the leap into electronic typesetting, remaining 
+            essentially unchanged. It was popularised in the 1960s with the release of Letraset 
+            sheets containing Lorem Ipsum passages, and more recently with desktop publishing software 
+            like Aldus PageMaker including versions of Lorem Ipsum.</Text>
            
             
             <View style={styles.actions}>
@@ -37,19 +48,7 @@ export default function Perfil() {
                     <Text style={styles.actionText}>Paciente</Text>
                 </TouchableOpacity>
 
-            </View>
-
-            <View style={styles.actions}>
-                <TouchableOpacity style={styles.action} onPress={navigateToProfissional}>
-                    <Text style={styles.actionText}>Profissional da saúde</Text>
-                </TouchableOpacity>
-            </View>
-
-            <Text style={styles.nomesTitle}>Aplicativo desenvolvido por:</Text>
-            <Text style={styles.nomes}>Mariana Rigo Estevão</Text>
-            <Text style={styles.nomes}>Matheus Venturi</Text>
-            <Text style={styles.nomes}>Lucas Guaragna</Text>
-           
+            </View>           
         
         </View>    
         </ScrollView>

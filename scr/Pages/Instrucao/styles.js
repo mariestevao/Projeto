@@ -80,4 +80,23 @@ export default StyleSheet.create({
         alignItems: 'center',
     },
 
+    volta:{
+        fontSize: 16,
+        color: '#fff',
+        //marginLeft:110,
+        width: '100%',
+        justifyContent: 'flex-start',
+        marginLeft: '5%',
+        marginBottom: '10%',
+
+    },
+
+    volta2:{
+        fontSize: 16,
+        color: '#00CCC1',
+        marginTop: - 23,
+        marginLeft: 30,
+        width: '80%',
+    },
+
 });
