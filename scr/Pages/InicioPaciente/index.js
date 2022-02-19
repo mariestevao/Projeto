@@ -3,9 +3,8 @@ import { View, StyleSheet, Image, Text, TouchableOpacity, SafeAreaView, TextInpu
 import { Button, Menu, Divider, Provider } from 'react-native-paper';
 import { Feather } from '@expo/vector-icons';
 import PerfilMed from '../../../assets/perfil.png';
-import { useNavigation } from '@react-navigation/native'
+import { NavigationContainer, useNavigation } from '@react-navigation/native'
 import styles from './styles';
-import { render } from 'react-dom';
 
 
 const MyComponent = () => {
@@ -32,7 +31,7 @@ const MyComponent = () => {
                 <Menu.Item onPress={() => {}} title="Coletas" />
                 <Menu.Item onPress={() => {}} title="Contatar Profissional" />
           <Divider />
-                <Menu.Item onPress={() => {}} title="Sair" />
+                <Menu.Item onPress={() => navigation.goBack} title="Sair" />
         </Menu>
 
       </View>

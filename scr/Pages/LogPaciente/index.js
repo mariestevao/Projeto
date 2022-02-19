@@ -24,6 +24,10 @@ export default class App extends Component {
         function navigateToCadastro() {
             navigation.navigate('Cadastro Paciente');
         }
+
+        function navigateToInstrucao() {
+            navigation.navigate('Instrução');
+        }
         
         return(
             <View style={styles.container}>
@@ -57,7 +61,7 @@ export default class App extends Component {
                  <Text style={styles.actionText}>Entrar</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.blococadastro} onPress={navigateToCadastro}>
+            <TouchableOpacity style={styles.blococadastro} onPress={navigateToInstrucao}>
                     <Text style={styles.cadastro}>Primeiro acesso</Text>
                     <Text style={styles.cadastro}>    </Text>
             </TouchableOpacity>

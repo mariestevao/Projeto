@@ -12,6 +12,7 @@ import InicioPaciente from './Pages/InicioPaciente';
 import InicioProfissional from './Pages/InicioProfissional';
 import CadastroPaciente from './Pages/CadastroPaciente';
 import CadastroProfissional from './Pages/CadastroProfissional';
+import Instrucao from './Pages/Instrucao';
 
 export default function Routes() {
     return (
@@ -24,6 +25,7 @@ export default function Routes() {
                 <AppStack.Screen name="Perfil Profissional" component={InicioProfissional}/>
                 <AppStack.Screen name="Cadastro Paciente" component={CadastroPaciente}/>
                 <AppStack.Screen name="Cadastro Profissional" component={CadastroProfissional}/>
+                <AppStack.Screen name="Instrução" component={Instrucao}/>
 
             </AppStack.Navigator>
         </NavigationContainer>
