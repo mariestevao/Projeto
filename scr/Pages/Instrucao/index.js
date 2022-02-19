@@ -3,25 +3,22 @@ import { useNavigation } from '@react-navigation/native'
 import { View, Image, Text, TouchableOpacity, ScrollView } from 'react-native';
 import logoImg from '../../../assets/instruction.png';
 import styles from './styles';
+import { Feather } from '@expo/vector-icons';
 
 export default function Perfil() {
     
     const navigation = useNavigation();
     
 
-    function navigateToPaciente() {
-        navigation.navigate('Login Paciente');
+    function navigateToPerfil() {
+        navigation.navigate('Perfil Paciente');
     }
 
-    function navigateToProfissional() {
-        navigation.navigate('Login Profissional');
-    }
-
-         return (
+        return (
         <ScrollView>
         <View style={styles.container}>
             
-            <TouchableOpacity style={styles.volta} onPress={navigateBack}>
+            <TouchableOpacity style={styles.volta} onPress={navigateToPerfil}>
                     <Feather name="arrow-left" size={28} color="#00CCC1" />
                     <Text style={styles.volta2}>Voltar</Text>
             </TouchableOpacity>
