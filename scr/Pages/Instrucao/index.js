@@ -1,17 +1,33 @@
-import React, {useState, useEffect} from 'react';
+import React, {Component, useState, useEffect} from 'react';
 import { useNavigation } from '@react-navigation/native'
 import { View, Image, Text, TouchableOpacity, ScrollView } from 'react-native';
 import logoImg from '../../../assets/instruction.png';
 import styles from './styles';
 import { Feather } from '@expo/vector-icons';
 
-export default function Perfil() {
-        return (
-        <ScrollView>
+export default class App extends Component {
+        
+    render() {
+    const {navigation} = this.props;
+       
+    function navigateBack() {
+        navigation.navigate('Login Profissional');
+    }
+    
+    function navigateToPaciente() {
+        navigation.navigate('InicioPaciente');
+    }
+
+    return(
+       
+       <ScrollView>
         <View style={styles.container}>
-            
-           
-            
+        
+        <TouchableOpacity style={styles.volta} onPress={navigateBack}>
+                    <Feather name="arrow-left" size={28} color="#00CCC1" />
+                    <Text style={styles.volta2}>Voltar</Text>
+        </TouchableOpacity>
+                 
             <View style={styles.header}>
                 <Image source={logoImg} style={styles.logo}/>
             </View>
@@ -39,4 +55,5 @@ export default function Perfil() {
         </View>    
         </ScrollView>
       );
+    }
 }
