@@ -6,8 +6,15 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { View, StyleSheet, Image, Text, TouchableOpacity, SafeAreaView, TextInput } from 'react-native';
 import PerfilMed from '../../../assets/sinal.png';
 import styles from './styles';
+import axios from 'axios';
 
 export default class App extends Component {
+
+    botao = async () => {
+        const valores = "olá";
+        await axios.post('https://webhook.site/50056033-80cd-4011-8da6-ea48d164835b', (valores));
+    }
+
 
     render() {
         
@@ -22,11 +29,7 @@ export default class App extends Component {
         }
 
         function navigateToCadastro() {
-            navigation.navigate('Cadastro Paciente');
-        }
-
-        function navigateToInstrucao() {
-            navigation.navigate('Instrução');
+            navigation.navigate('Cadastrar Paciente');
         }
         
         return(
@@ -57,11 +60,11 @@ export default class App extends Component {
           
             <TouchableOpacity 
             style={styles.action} 
-            onPress={navigateToPaciente}>
+            onPress = {this.botao}>
                  <Text style={styles.actionText}>Entrar</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.blococadastro} onPress={navigateToInstrucao}>
+            <TouchableOpacity style={styles.blococadastro} onPress={navigateToCadastro}>
                     <Text style={styles.cadastro}>Primeiro acesso</Text>
                     <Text style={styles.cadastro}>    </Text>
             </TouchableOpacity>

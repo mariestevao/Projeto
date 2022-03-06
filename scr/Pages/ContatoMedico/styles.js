@@ -13,13 +13,13 @@ export default StyleSheet.create({
             flexDirection: 'row',
             justifyContent: 'space-between',
             alignItems: 'center',
-            marginBottom: 20,
-            marginTop: 20
+            marginTop: -40,
+            marginBottom: 10
     },
 
     logo: {
-        width:150,
-        height:150,
+        width:100,
+        height:100,
     },
 
     title: {
@@ -28,55 +28,31 @@ export default StyleSheet.create({
         fontWeight: 'bold'
     },
 
-    nomesTitle: {
-        fontSize: 12,
-        lineHeight: 20,
-        marginTop: 100,
-        marginBottom: 12,
-        color: '#737380'
-    },
-    
-    nomes: {
-        fontSize: 10,
-        lineHeight: 20,
-        marginLeft: 10,
-        marginBottom: 5,
-        color: '#737380'
-    },
-
     activityTitle: {
         fontWeight: 'bold',
         fontSize: 20,
         color: '#13131a',
         lineHeight: 30,
-        justifyContent: 'center',
-        alignItems: 'center',
-        textAlign: 'justify',
-    },
-    
-    duvida: {
-        color: '#13131a',
-        fontSize: 15,
-        justifyContent: 'space-between',
-        alignItems: 'center',
     },
 
     actions: {
-        marginTop: 16,
-        flexDirection: 'row',
+        marginTop: 12,
+        flexDirection: 'column',
         justifyContent: 'space-between',
         alignItems: 'center',
 
     },
 
     action: {
-        //marginTop: 10,
-        backgroundColor:'#00CCC1',
+        flexDirection: 'row',
+        backgroundColor: '#00CCC1',
         borderRadius: 30,
         height: 50,
-        width: '65%',
+        width: '48%',
         justifyContent: 'center',
         alignItems: 'center',
+        marginBottom: 10,
+
     },
 
     actionText: {
@@ -87,23 +63,21 @@ export default StyleSheet.create({
         alignItems: 'center',
     },
 
-    volta:{
-        fontSize: 16,
-        color: '#fff',
-        //marginLeft:110,
-        width: '100%',
-        justifyContent: 'flex-start',
-        //marginLeft: '2%',
-        marginBottom: '10%',
-
+    nomesTitle: {
+        fontSize: 12,
+        lineHeight: 20,
+        marginTop: 100,
+        marginBottom: 12,
+        color: '#737380'
     },
-
-    volta2:{
+    
+    instrucao:{
         fontSize: 16,
         color: '#00CCC1',
-        marginTop: - 23,
-        marginLeft: 30,
-        width: '80%',
+        justifyContent: 'center',
+        alignItems:'center',
+        marginBottom:'1%',
+        marginTop:'1%',
     },
 
 });
